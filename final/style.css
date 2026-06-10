@@ -25,7 +25,7 @@ body {
     color: white;
     font-size: 1.8rem;
     font-weight: bold;
-    
+
 }
 
 .custom-navbar .navbar-a:hover {
@@ -67,15 +67,26 @@ body {
     background-color: #FFEBCC;
     padding-top: 220px;
     padding-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
 }
 
 .img-profil {
-    width: 350px;
-    height: 350px;
+    width: 450px;
+    height: 450px;
     object-fit: cover;
     border-radius: 50%;
-    border: 10px solid #FDAAAA;
+    border: 5px solid #FDAAAA;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
+
+.img-profil:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(253, 170, 170, 0.6);
+}
+
 
 .hero-title {
     font-size: clamp(2.5rem, 6vw, 5rem);
@@ -94,20 +105,32 @@ body {
     width: 100%;
 }
 
-
 /* ===== ABOUT SECTION ===== */
 .about {
     background-color: #BFDDF0;
     padding-top: 10px;
 }
+
 .img-about {
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid #FDAAAA;
+    margin: 50px;
+
+    /* efek */
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
+.img-about:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow:
+        0 0 20px rgba(253, 170, 170, 0.5),
+        0 0 40px rgba(191, 221, 240, 0.4),
+        0 15px 30px rgba(0, 0, 0, 0.2);
+}
 
 .about h1 {
     font-size: clamp(2rem, 5vw, 3.5rem);
@@ -180,55 +203,43 @@ body {
 
 /* ===== CONTACT SECTION ===== */
 #contact {
-    padding-bottom: 200px !important;
-   
+    padding-bottom: 150px;
     text-align: center;
 }
 
-#contact h1 {
-    font-family: "Gaon";
-    font-size: clamp(2rem, 4vw, 3rem);
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
-.contact-card {
-    background: #dff8fc;
-    border: none;
-    border-radius: 15px;
+.social-icon {
+    width: 90px;
+    height: 90px;
+    background: #FFEBCC;
+    border: 5px solid #FDAAAA;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #113F67;
+    font-size: 40px;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.form-control {
-    background: #ffc0c0;
-    border: none;
-    color: #ffffff;
+.social-icon:hover {
+    transform: translateY(-10px) scale(1.1);
+    background: #FDAAAA;
+    color: white;
+    box-shadow:
+        0 0 20px rgba(253, 170, 170, 0.7),
+        0 0 40px rgba(191, 221, 240, 0.5);
 }
-
-.form-control::placeholder {
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.form-control:focus {
-    background: #ffffff;
-    color: #333;
-    box-shadow: none;
-}
-
-.tombol-orang-kece {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 10px;
-    background: #c7c1f4;
-    color: #111111;
-    font-weight: 600;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.tombol-orang-kece:hover {
-    background: #ffffff;
-    transform: translateY(-3px);
-}
-
 
 /* ===== FOOTER ===== */
 footer {
