@@ -2,6 +2,9 @@ body {
     background-color: #BFDDF0;
 }
 
+html{
+  scroll-behavior:smooth;
+}
 
 .nav {
     background-color: #FDAAAA;
@@ -42,7 +45,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 150px;
     gap: 30px;
 
 }
@@ -77,13 +80,13 @@ body {
     margin-top: 0px;
     background-color: #BFDDF0;
 
-    
+
 }
 
 .about h1 {
     text-align: center;
     font-size: 55px;
-    
+
 }
 
 .about h3 {
@@ -96,6 +99,8 @@ body {
     margin: auto;
     line-height: 1.8;
     color: #555;
+    font-size: 18px;
+    text-align: justify;
 }
 
 
@@ -118,7 +123,7 @@ body {
 .project {
     background-color: #FFEBCC;
     margin-bottom: 100px;
-    padding-bottom: 50px;
+
 }
 
 .project h1 {
@@ -169,27 +174,105 @@ body {
     font-size: larger;
 }
 
-.contact {
-    padding: 80px 10%;
-}
 
+#contact {
+    margin-top: 0px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    text-align: center;
+}
 .contact h1 {
-    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+.contact-card {
+    width: 700px;
+    max-width: 200%;
+    height: 330px;
+    margin: auto;
+    background: #dff8fc;
+    border: none;
 }
 
-.contact p {
-    margin: 10px 0;
-    color: aliceblue;
+.form-control {
+    background: #ffc0c0;
+    border: none;
+    color: #ffffff;
+}
+
+.form-control:focus {
+    background: #ffffff;
+    color: #ffffff;
+    box-shadow: none;
+}
+
+.tombol-orang-kece {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #c7c1f4;
+    color: #111111;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.tombol-orang-kece:hover {
+    background: #ffffff;
+    transform: translateY(-3px);
 }
 
 footer {
-    text-align: center;
-    background-color: #FFEBCC;
+    background: #FDAAAA;
+    padding: 50px 0;
 }
 
-footer p {
-    margin: 0;
-    padding: 20px;
-    color: #333;
-    font-size: 14px;
+.footer-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-menu li {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #F5F5F5;
+    text-decoration: none;
+    transition: .3s;
+}
+
+footer a:hover {
+    color: #BDBDBD;
+}
+
+footer i {
+    margin-right: 8px;
+}
+
+hr {
+    border-color: #333333;
+}
+
+@media(max-width:768px){
+  
+  .hirrono{
+    text-align:center;
+  }
+  
+  .hirrono h1{
+    font-size:2.2rem;
+  }
+  
+  .profile-img{
+    width:240px;
+    height:240px;
+  }
+  
+  #about .section-title{
+    font-size:2.2rem;
+  }
+  
 }
