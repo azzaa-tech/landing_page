@@ -1,0 +1,195 @@
+body {
+    background-color: #BFDDF0;
+}
+
+
+.nav {
+    background-color: #FDAAAA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    height: 80px;
+}
+
+.nav h1 {
+    color: white;
+    margin: 0;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav ul li a:hover {
+    color: #FFEBCC;
+}
+
+
+.hero {
+    background-color: #FFEBCC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    gap: 30px;
+
+}
+
+.img-profil {
+    border-radius: 50%;
+    border: 10px solid #FDAAAA;
+}
+
+.hero-text {
+    text-align: left;
+}
+
+.hero-text h1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+    color: #333;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #666;
+}
+
+
+.wave {
+    display: block;
+    width: 100%;
+}
+
+.about {
+    margin-top: 0px;
+    background-color: #BFDDF0;
+
+    
+}
+
+.about h1 {
+    text-align: center;
+    font-size: 55px;
+    
+}
+
+.about h3 {
+    margin-bottom: 20px;
+    color: #113F67;
+    font: bold 30px Arial, sans-serif;
+}
+
+.about p {
+    margin: auto;
+    line-height: 1.8;
+    color: #555;
+}
+
+
+.about-card {
+    width: 50%;
+    background-color: #FFEBCC;
+    padding: 30px;
+    border-radius: 15px;
+    border: 8px solid #FDAAAA;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.project {
+    background-color: #FFEBCC;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+}
+
+.project h1 {
+    margin-bottom: 80px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card-project {
+    width: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.card-project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-project img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card-project h3 {
+    text-align: center;
+
+}
+
+.project p {
+    color: #ffffff;
+    text-align: center;
+    font-size: larger;
+}
+
+.contact {
+    padding: 80px 10%;
+}
+
+.contact h1 {
+    margin-bottom: 20px;
+}
+
+.contact p {
+    margin: 10px 0;
+    color: aliceblue;
+}
+
+footer {
+    text-align: center;
+    background-color: #FFEBCC;
+}
+
+footer p {
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    font-size: 14px;
+}
