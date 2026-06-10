@@ -1,204 +1,199 @@
-body {
-    background-color: #BFDDF0;
+/* ===== FONT ===== */
+@font-face {
+    font-family: "Gaon";
+    src: url("./aset/super_mindset/Super Mindset.ttf");
 }
 
+
+/* ===== BASE ===== */
 html {
     scroll-behavior: smooth;
 }
 
-.nav {
+body {
+    background-color: #BFDDF0;
+}
+
+
+/* ===== NAVBAR ===== */
+.custom-navbar {
     background-color: #FDAAAA;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 50px;
     height: 80px;
 }
 
-.nav h1 {
+.custom-navbar .navbar-a {
     color: white;
-    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    
 }
 
-.nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    margin: 0;
+.custom-navbar .navbar-a:hover {
+    color: #FFEBCC;
 }
 
-.nav ul li a {
-    text-decoration: none;
+.custom-navbar .nav-link {
     color: white;
     font-weight: bold;
     font-size: 18px;
     transition: 0.3s;
 }
 
-.nav ul li a:hover {
+.custom-navbar .nav-link:hover {
     color: #FFEBCC;
 }
 
+/* Hamburger icon warna putih */
+.custom-navbar .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.6);
+}
 
+.custom-navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Menu mobile background */
+@media (max-width: 767px) {
+    .custom-navbar .navbar-collapse {
+        background-color: #FDAAAA;
+        padding: 10px 20px 15px;
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+
+/* ===== HERO SECTION ===== */
 .hero {
     background-color: #FFEBCC;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 150px;
-    gap: 30px;
-
+    padding-top: 220px;
+    padding-bottom: 20px;
 }
 
 .img-profil {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
     border-radius: 50%;
     border: 10px solid #FDAAAA;
 }
 
-.hero-text {
-    text-align: left;
-}
-
-.hero-text h1 {
-    margin-bottom: 10px;
-    font-size: 80px;
+.hero-title {
+    font-size: clamp(2.5rem, 6vw, 5rem);
     color: #333;
     font-family: "Gaon";
-
+    margin-bottom: 10px;
 }
 
-.hero-text p {
+.hero-sub {
     font-size: 18px;
     color: #666;
 }
-
 
 .wave {
     display: block;
     width: 100%;
 }
 
+
+/* ===== ABOUT SECTION ===== */
 .about {
-    margin-top: 0px;
     background-color: #BFDDF0;
-
-
+    padding-top: 10px;
 }
+.img-about {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #FDAAAA;
+}
+
 
 .about h1 {
-    text-align: center;
-    font-size: 55px;
+    font-size: clamp(2rem, 5vw, 3.5rem);
     font-family: "Gaon";
-
 }
-
-.about h3 {
-    margin-bottom: 20px;
-    color: #113F67;
-    font: bold 30px Arial, sans-serif;
-}
-
-.about p {
-    margin: auto;
-    line-height: 1.8;
-    color: #555;
-    font-size: 18px;
-    text-align: justify;
-}
-
 
 .about-card {
-    width: 50%;
     background-color: #FFEBCC;
     padding: 30px;
     border-radius: 15px;
     border: 8px solid #FDAAAA;
 }
 
-.about-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+.about-card h3 {
+    margin-bottom: 20px;
+    color: #113F67;
+    font: bold 28px Arial, sans-serif;
+}
+
+.about-card p {
+    line-height: 1.8;
+    color: #555;
+    font-size: 17px;
+    text-align: justify;
 }
 
 
+/* ===== PROJECT SECTION ===== */
 .project {
     background-color: #FFEBCC;
+    padding-top: 60px;
     margin-bottom: 100px;
-
 }
 
 .project h1 {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     text-align: center;
     font-family: "Gaon";
     font-weight: bold;
-    font-size: 50px;
-}
-
-.project-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    font-size: clamp(2rem, 4vw, 3rem);
 }
 
 .card-project {
-    width: auto;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 5px;
-    border-radius: 5px;
+    padding: 8px 8px 0;
+    border-radius: 10px;
     transition: 0.3s;
+    overflow: hidden;
 }
 
 .card-project:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.card-project img {
+.img-project {
     width: 100%;
-    height: 300px;
     object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 15px;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 10px;
 }
 
 .card-project h3 {
     text-align: center;
-
-}
-
-.project p {
-    color: #ffffff;
-    text-align: center;
-    font-size: larger;
-}
-
-
-#contact {
-    margin-top: 0px;
-    padding-bottom: 50px;
-    padding-top: 50px;
-    text-align: center;
-}
-
-.contact h1 {
-    text-align: center;
-    font-family: "Gaon";
+    font-size: 0.9rem;
     font-weight: bold;
-    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+
+/* ===== CONTACT SECTION ===== */
+#contact {
+    padding-bottom: 200px !important;
+   
+    text-align: center;
+}
+
+#contact h1 {
+    font-family: "Gaon";
+    font-size: clamp(2rem, 4vw, 3rem);
 }
 
 .contact-card {
-    width: 700px;
-    max-width: 200%;
-    height: 330px;
-    margin: auto;
     background: #dff8fc;
     border: none;
+    border-radius: 15px;
 }
 
 .form-control {
@@ -207,9 +202,13 @@ html {
     color: #ffffff;
 }
 
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
 .form-control:focus {
     background: #ffffff;
-    color: #ffffff;
+    color: #333;
     box-shadow: none;
 }
 
@@ -221,7 +220,8 @@ html {
     background: #c7c1f4;
     color: #111111;
     font-weight: 600;
-    transition: .3s;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 .tombol-orang-kece:hover {
@@ -229,6 +229,8 @@ html {
     transform: translateY(-3px);
 }
 
+
+/* ===== FOOTER ===== */
 footer {
     background: #FDAAAA;
     padding: 50px 0;
@@ -246,7 +248,7 @@ footer {
 footer a {
     color: #F5F5F5;
     text-decoration: none;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 footer a:hover {
@@ -259,9 +261,4 @@ footer i {
 
 hr {
     border-color: #333333;
-}
-
-@font-face {
-    font-family: "Gaon";
-    src: url("./aset//super_mindset/Super\ Mindset.ttf");
 }
