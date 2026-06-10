@@ -243,33 +243,14 @@ body {
 
 /* ===== FOOTER ===== */
 footer {
-    background: #FDAAAA;
-    padding: 50px 0;
+    padding: 40px 0;
+    text-align: center;
+
 }
 
-.footer-menu {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-menu li {
-    margin-bottom: 10px;
-}
-
-footer a {
-    color: #F5F5F5;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-footer a:hover {
-    color: #BDBDBD;
-}
-
-footer i {
-    margin-right: 8px;
-}
-
-hr {
-    border-color: #333333;
+footer hr {
+    width: 700px;
+    margin: 0 auto 15px;
+    border: none;
+    border-top: 2px solid rgba(255,255,255,0.7);
 }
