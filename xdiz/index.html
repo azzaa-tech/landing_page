@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>곽지석 | Gaon — Xdinary Heroes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top custom-navbar" id="mainNav">
+            <div class="container-fluid px-4">
+                <a class="navbar-a" href="#home">GAON<span class="dot">.</span></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                    aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+                    <ul class="navbar-nav gap-md-2">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#project">Discography</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ===== HERO SECTION ===== -->
+        <section class="hero" id="home">
+            <div class="eq-bars" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+
+            <div class="container position-relative">
+                <div class="row align-items-center justify-content-center g-5">
+                    <div class="col-12 col-md-5 text-center order-2 order-md-1" data-aos="fade-right" data-aos-duration="900">
+                        <p class="hero-eyebrow">XDINARY HEROES</p>
+                        <h1 class="hero-title">GAON</h1>
+                        <p class="hero-kr">곽지석</p>
+                        <div class="role-chips">
+                            <span class="chip">Rhythm Guitarist</span>
+                            <span class="chip">Vocalist</span>
+                            <span class="chip">Songwriter</span>
+                        </div>
+                        <a href="#about" class="btn-scroll">
+                            <i class="bi bi-arrow-down"></i> Kenalan Yuk
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-md-5 order-1 order-md-2 text-center" data-aos="fade-left" data-aos-duration="900">
+                        <a href="https://www.instagram.com/xdinaryheroes_official/" target="_blank" class="btn-follow">
+                            <img src="aset/mbg.jpg" alt="Gaon" class="img-profil img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-ticket-edge" aria-hidden="true"></div>
+        </section>
+
+        <!-- ===== ABOUT SECTION ===== -->
+        <section class="about" id="about">
+            <div class="container" data-aos="fade-up" data-aos-duration="1000">
+                <p class="section-eyebrow text-center">GET TO KNOW</p>
+                <h2 class="section-title text-center mb-5">About Gaon</h2>
+
+                <div class="row align-items-center justify-content-center g-5">
+                    <div class="col-12 col-md-5 text-center" data-aos="zoom-in" data-aos-duration="900">
+                        <button type="button" class="about-photo-card" id="aboutPhotoCard" aria-label="Klik untuk ganti foto Gaon">
+                            <img src="aset/myhoney.jpg" alt="Gaon" class="about-photo img-fluid" id="aboutPhoto">
+                            <span class="about-card-hint"><i class="bi bi-hand-index-thumb"></i> Klik buat lihat sisi lain Gaon</span>
+                        </button>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="about-card">
+                            <span class="quote-mark">“</span>
+                            <h3 id="aboutTitle">Kwak Jiseok</h3>
+                            <p id="aboutText">
+                                Gaon (Kwak Jiseok) adalah gitaris, vokalis, dan penulis lagu asal Korea Selatan yang
+                                dikenal sebagai anggota band Xdinary Heroes. Ia memiliki kemampuan dalam bermain gitar,
+                                aransemen musik, serta pengembangan ide kreatif untuk karya-karya band. Dengan karakter
+                                panggung yang energik dan kemampuan bermusik yang kuat, Gaon berkontribusi dalam
+                                menciptakan identitas musik yang khas dan dinamis.
+                            </p>
+                            <div class="about-tags">
+                                <span><i class="bi bi-music-note-beamed"></i> Guitar</span>
+                                <span><i class="bi bi-mic-fill"></i> Vocal</span>
+                                <span><i class="bi bi-pencil-fill"></i> Songwriting</span>
+                            </div>
+                            <div class="about-dots" id="aboutDots" role="tablist" aria-label="Pilih cerita Gaon"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROJECT SECTION ===== -->
+        <section class="project" id="project">
+            <div class="container" data-aos="fade-up" data-aos-duration="1000">
+                <p class="section-eyebrow text-center light">ON REPEAT</p>
+                <h2 class="section-title text-center light mb-5">Discography</h2>
+
+                <div class="row g-4 justify-content-center row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-xl-5">
+
+                    <div class="col" data-aos="fade-up" data-aos-delay="0">
+                        <a class="card-project h-100 text-decoration-none" style="background-color:#81689D"
+                            href="https://open.spotify.com/intl-id/album/5zjnlpEemkmaN6iv16vmDm?si=iviBopqzR16-_hFfe69EFQ"
+                            target="_blank">
+                            <div class="vinyl-wrap">
+                                <img src="aset/hello, world.jpeg" alt="HELLO, WORLD!" class="img-project">
+                                <span class="play-badge"><i class="bi bi-play-fill"></i></span>
+                            </div>
+                            <h3 style="color:#ffffff">HELLO, WORLD!</h3>
+                        </a>
+                    </div>
+
+                    <div class="col" data-aos="fade-up" data-aos-delay="50">
+                        <a class="card-project h-100 text-decoration-none" style="background-color:#c16a5d"
+                            href="https://open.spotify.com/intl-id/album/2fWuaeiOHl60xAQ1kUoyK4?si=bxmSpYkjTBOVtCYyQ_IjOQ"
+                            target="_blank">
+                            <div class="vinyl-wrap">
+                                <img src="aset/haircut.jpg" alt="OVERLOAD" class="img-project">
+                                <span class="play-badge"><i class="bi bi-play-fill"></i></span>
+                            </div>
+                            <h3 style="color:#ffffff">OVERLOAD</h3>
+                        </a>
+                    </div>
+
+                    <div class="col" data-aos="fade-up" data-aos-delay="100">
+                        <a class="card-project h-100 text-decoration-none" style="background-color:#c19e5d"
+                            href="https://open.spotify.com/intl-id/album/3jkLKeTkRsRehIUkPFHubG?si=ZxrxXnTVShiQFhBKwD_o2Q"
+                            target="_blank">
+                            <div class="vinyl-wrap">
+                                <img src="aset/deadlock.jpg" alt="DEADLOCK" class="img-project">
+                                <span class="play-badge"><i class="bi bi-play-fill"></i></span>
+                            </div>
+                            <h3 style="color:#ffffff">DEADLOCK</h3>
+                        </a>
+                    </div>
+
+                    <div class="col" data-aos="fade-up" data-aos-delay="150">
+                        <a class="card-project h-100 text-decoration-none" style="background-color:#dbafce"
+                            href="https://open.spotify.com/intl-id/album/6wRy2dydFytIzBlEqVa5sh?si=wwvWtaR8R-yuIlA_UuJZDw"
+                            target="_blank">
+                            <div class="vinyl-wrap">
+                                <img src="aset/livelock.jpg" alt="LIVELOCK" class="img-project">
+                                <span class="play-badge"><i class="bi bi-play-fill"></i></span>
+                            </div>
+                            <h3 style="color:#ffffff">LIVELOCK</h3>
+                        </a>
+                    </div>
+
+                    <div class="col" data-aos="fade-up" data-aos-delay="200">
+                        <a class="card-project h-100 text-decoration-none" style="background-color:#935c53"
+                            href="https://open.spotify.com/intl-id/album/26ogXm7X0kUSidtoaQVBei?si=mIJDZ7MLS8acdg6FQT87og"
+                            target="_blank">
+                            <div class="vinyl-wrap">
+                                <img src="aset/shoot.jpg" alt="TROUBLESHOOTING" class="img-project">
+                                <span class="play-badge"><i class="bi bi-play-fill"></i></span>
+                            </div>
+                            <h3 style="color:#ffffff">TROUBLESHOOTING</h3>
+                        </a>
+                    </div>
+
+                    <div class="col" data-aos="fade-up" data-aos-delay="0">
+                        <a class="card-project h-100 text-decoration-none" style="background-color:#1f1a19"
+                            href="https://open.spotify.com/intl-id/album/6y9Y5ddQJZTp2QmajWznRd?si=Xu7f-VpMSjWHQUGNp_T11g"
+                            target="_blank">
+                            <div class="vinyl-wrap">
+                                <img src="aset/live.jpg" alt="LIVE AND FALL" class="img-project">
+                                <span class="play-badge"><i class="bi bi-play-fill"></i></span>
+                            </div>
+                            <h3 style="color:#ffffff">LIVE AND FALL</h3>
+                        </a>
+                    </div>
+
+                    <div class="col" data-aos="fade-up" data-aos-delay="50">
+                        <a class="card-project h-100 text-decoration-none" style="background-color:#b0a6a4"
+                            href="https://open.spotify.com/intl-id/album/0h4U9eKaISbwP93lglW6s6?si=gVIzPBweQRaXjID-wL20Bw"
+                            target="_blank">
+                            <div class="vinyl-wrap">
+                                <img src="aset/buma.jpg" alt="BEAUTIFUL MIND" class="img-project">
+                                <span class="play-badge"><i class="bi bi-play-fill"></i></span>
+                            </div>
+                            <h3 style="color:#ffffff">BEAUTIFUL MIND</h3>
+                        </a>
+                    </div>
+
+                    <div class="col" data-aos="fade-up" data-aos-delay="100">
+                        <a class="card-project h-100 text-decoration-none" style="background-color:#c24747"
+                            href="https://open.spotify.com/intl-id/album/04WcDHoLelHf9ajNp6HXkD?si=maZj5Q6YSu-7Iw1SDPe5jQt"
+                            target="_blank">
+                            <div class="vinyl-wrap">
+                                <img src="aset/love.jpg" alt="LXVE TO DEATH" class="img-project">
+                                <span class="play-badge"><i class="bi bi-play-fill"></i></span>
+                            </div>
+                            <h3 style="color:#ffffff">LXVE TO DEATH</h3>
+                        </a>
+                    </div>
+
+                    <div class="col" data-aos="fade-up" data-aos-delay="150">
+                        <a class="card-project h-100 text-decoration-none" style="background-color:#7a7d91"
+                            href="https://open.spotify.com/intl-id/album/4ZkG5DPuj47UvzoZ2bAVOU?si=_2Rr4HraRPGK02pYMGdhTw"
+                            target="_blank">
+                            <div class="vinyl-wrap">
+                                <img src="aset/dead.jpg" alt="DEAD AND" class="img-project">
+                                <span class="play-badge"><i class="bi bi-play-fill"></i></span>
+                            </div>
+                            <h3 style="color:#ffffff">DEAD AND</h3>
+                        </a>
+                    </div>
+
+                    <div class="col" data-aos="fade-up" data-aos-delay="200">
+                        <a class="card-project h-100 text-decoration-none" style="background-color:#ffffff"
+                            href="https://open.spotify.com/playlist/5V9V8umW2Xtf1m7hbbKlQX?si=4f85cea8b60148c8"
+                            target="_blank">
+                            <div class="vinyl-wrap">
+                                <img src="aset/open.jpg" alt="OPEN BETA" class="img-project">
+                                <span class="play-badge dark"><i class="bi bi-play-fill"></i></span>
+                            </div>
+                            <h3>OPEN BETA</h3>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT SECTION ===== -->
+        <section id="contact">
+            <div class="container text-center" data-aos="fade-up" data-aos-duration="900">
+                <p class="section-eyebrow text-center">STAY TUNED</p>
+                <h2 class="section-title mb-3">Follow Xdinary Heroes</h2>
+
+                <p class="contact-sub mb-5">
+                    Stay connected with Xdinary Heroes through their official social media.
+                </p>
+
+                <div class="social-links">
+
+                    <a href="https://www.instagram.com/xdinaryheroes_official/" target="_blank" class="social-icon" aria-label="Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="https://x.com/XH_official" target="_blank" class="social-icon" aria-label="X / Twitter">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/@xdinaryheroesofficial" target="_blank" class="social-icon" aria-label="YouTube">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+
+                    <a href="https://open.spotify.com/intl-id/artist/1khChLj7REGqjM043PlYyn?si=YisR0hDcS625u-4ya1dWyg"
+                        target="_blank" class="social-icon" aria-label="Spotify">
+                        <i class="bi bi-spotify"></i>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <hr>
+            <p class="text-center mb-0">© 2026 Azzha ♡︎ 곽지석</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        AOS.init();
+
+        /* ============================================================
+           ABOUT CARD — 6 foto + 6 cerita, ganti tiap kali kartu diklik
+           Tinggal edit array di bawah ini buat ganti foto & teksnya.
+           Taruh 6 foto di folder aset/ (misal gaon-1.jpg s/d gaon-6.jpg).
+        ============================================================ */
+        const aboutSlides = [
+            {
+                img: "aset/gaon-1.jpg",
+                title: "Kwak Jiseok",
+                text: "Gaon (Kwak Jiseok) adalah gitaris, vokalis, dan penulis lagu asal Korea Selatan yang dikenal sebagai anggota band Xdinary Heroes. Ia memiliki kemampuan dalam bermain gitar, aransemen musik, serta pengembangan ide kreatif untuk karya-karya band."
+            },
+            {
+                img: "aset/gaon-2.jpg",
+                title: "Di Atas Panggung",
+                text: "Dengan karakter panggung yang energik dan kemampuan bermusik yang kuat, Gaon berkontribusi dalam menciptakan identitas musik yang khas dan dinamis bagi Xdinary Heroes."
+            },
+            {
+                img: "aset/gaon-3.jpg",
+                title: "Sang Rhythm Guitarist",
+                text: "Sebagai rhythm guitarist, Gaon jadi salah satu fondasi bunyi khas Xdinary Heroes — memadukan permainan gitar dengan warna genre yang berbeda di tiap comeback."
+            },
+            {
+                img: "aset/gaon-4.jpg",
+                title: "Proses Kreatif",
+                text: "Selain bermain gitar, Gaon juga ikut ambil bagian dalam proses penulisan lagu, menuangkan ide-ide segar untuk karya-karya band."
+            },
+            {
+                img: "aset/gaon-5.jpg",
+                title: "Sisi Hangat",
+                text: "Di luar panggung, Gaon dikenal punya sisi hangat dan dekat dengan penggemar lewat konten-konten yang ia bagikan."
+            },
+            {
+                img: "aset/gaon-6.jpg",
+                title: "Untuk Para Fans",
+                text: "Terus dukung perjalanan Gaon dan Xdinary Heroes lewat setiap karya baru mereka — dari panggung ke panggung, lagu ke lagu."
+            }
+        ];
+
+        let aboutIndex = 0;
+        const aboutPhoto = document.getElementById('aboutPhoto');
+        const aboutTitle = document.getElementById('aboutTitle');
+        const aboutText = document.getElementById('aboutText');
+        const aboutCard = document.getElementById('aboutPhotoCard');
+        const aboutDots = document.getElementById('aboutDots');
+
+        function renderAboutDots() {
+            aboutDots.innerHTML = '';
+            aboutSlides.forEach((_, i) => {
+                const dot = document.createElement('button');
+                dot.type = 'button';
+                dot.className = 'about-dot' + (i === aboutIndex ? ' active' : '');
+                dot.setAttribute('aria-label', 'Cerita ' + (i + 1));
+                dot.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    setAboutSlide(i);
+                });
+                aboutDots.appendChild(dot);
+            });
+        }
+
+        function setAboutSlide(i) {
+            aboutIndex = (i + aboutSlides.length) % aboutSlides.length;
+            const slide = aboutSlides[aboutIndex];
+
+            aboutCard.classList.add('is-fading');
+            const card = document.querySelector('.about-card');
+            card.classList.add('is-fading');
+
+            setTimeout(() => {
+                aboutPhoto.src = slide.img;
+                aboutPhoto.alt = "Gaon — " + slide.title;
+                aboutTitle.textContent = slide.title;
+                aboutText.textContent = slide.text;
+                aboutCard.classList.remove('is-fading');
+                card.classList.remove('is-fading');
+                renderAboutDots();
+            }, 200);
+        }
+
+        aboutCard.addEventListener('click', () => setAboutSlide(aboutIndex + 1));
+        renderAboutDots();
+
+        const nav = document.getElementById('mainNav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 30);
+        });
+
+        // close mobile menu after tapping a link
+        document.querySelectorAll('#navbarMenu .nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const menu = document.getElementById('navbarMenu');
+                if (menu.classList.contains('show')) {
+                    bootstrap.Collapse.getOrCreateInstance(menu).hide();
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
